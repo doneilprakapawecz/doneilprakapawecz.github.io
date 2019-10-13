@@ -316,7 +316,75 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Lato, sans-serif;
+  background: #888686; }
+
+.container {
+  max-width: 1440px;
+  padding: 5rem;
+  background: white; }
+
+.header {
+  width: 50%; }
+  .header--picture {
+    border-radius: 10px;
+    margin-bottom: 20px; }
+
+.header__first {
+  margin: 0;
+  letter-spacing: 1px;
+  padding-left: 20px; }
+  .header__first--top {
+    letter-spacing: 1px; }
+  .header__first--underline {
+    color: #06C847;
+    font-size: 2rem;
+    padding-left: 20px;
+    margin: 0;
+    margin-top: 40px;
+    background: whitesmoke;
+    letter-spacing: -2px; }
+    .header__first--underline:nth-of-type(2) {
+      color: #653CAD; }
+    .header__first--underline:nth-of-type(3) {
+      color: #2251CC; }
+
+.list {
+  width: 350px;
+  font-size: 1.2rem;
+  margin-left: 150px; }
+  .list__green {
+    list-style-image: url("/assets/img/check-circle-solid--green.svg"); }
+  .list__purple {
+    list-style-image: url("/assets/img/check-circle-solid--purple.svg"); }
+  .list__blue {
+    list-style-image: url("/assets/img/check-circle-solid--blue.svg"); }
+  .list__element {
+    line-height: 2rem;
+    letter-spacing: 2px; }
+
+.paragrath {
+  font-size: 1.2rem;
+  letter-spacing: 1px; }
+
+.skills {
+  margin-top: 150px; }
+  .skills__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    background: whitesmoke; }
 
 /*# sourceMappingURL=main.css.map */
