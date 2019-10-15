@@ -330,6 +330,13 @@ body {
   padding: 5rem;
   background: white; }
 
+.footer {
+  background: #171f3f;
+  padding: 20px; }
+  .footer__header {
+    color: whitesmoke;
+    margin-top: 0; }
+
 .header {
   width: 50%; }
   .header--picture {
@@ -355,23 +362,61 @@ body {
     .header__first--underline:nth-of-type(3) {
       color: #2251CC; }
 
-.list {
-  width: 350px;
+.link {
+  text-decoration: none;
   font-size: 1.2rem;
-  margin-left: 150px; }
+  color: #5c5ce9;
+  -webkit-transition: color .4s ease-in-out;
+  -o-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out; }
+  .link:hover {
+    color: #7e142b; }
+
+.list {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  max-height: 160px;
+  font-size: 1.2rem; }
   .list__green {
-    list-style-image: url("/assets/img/check-circle-solid--green.svg"); }
+    list-style-image: url("/assets/img/check-circle-solid--green.svg");
+    padding-right: 150px; }
   .list__purple {
-    list-style-image: url("/assets/img/check-circle-solid--purple.svg"); }
+    list-style-image: url("/assets/img/check-circle-solid--purple.svg");
+    padding-right: 130px; }
   .list__blue {
-    list-style-image: url("/assets/img/check-circle-solid--blue.svg"); }
+    list-style-image: url("/assets/img/check-circle-solid--blue.svg");
+    padding-right: 140px; }
   .list__element {
     line-height: 2rem;
     letter-spacing: 2px; }
+  .list__repo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style-image: url("/assets/img/AK.svg");
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .list__repo--element {
+      width: 22%;
+      background: whitesmoke;
+      padding: 10px;
+      margin: 20px 40px 20px 40px; }
 
 .paragrath {
   font-size: 1.2rem;
   letter-spacing: 1px; }
+  .paragrath__footer {
+    color: whitesmoke; }
 
 .skills {
   margin-top: 150px; }
