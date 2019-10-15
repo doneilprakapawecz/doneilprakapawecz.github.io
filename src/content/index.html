@@ -1,40 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <link rel="stylesheet" href="assets/fontello/css/fontello.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <script src="js/main.js"></script>
-  </body>
+<body>
+    
+  <!--<div><i class="demo-icon icon-ok-circle">&#xe802;</i></div>-->
+  <div class="container">
+    <div class="container__smaller">
+      <header class="header">
+        <img src="/assets/img/person.png" class="header--picture"alt="person.">
+        <h1 class="header__first--top">Hi! My name is Daniel and I want to be a frontend developer</h1>
+        <p class="paragrath">You maight be interested in checking the list of <a class="link" href="#my skills">my skills</a>.
+          Don't forget to have aglimpse at <a class="link" href="#my projects">my projects</a>.Curently I'm looking for a new
+          chalenges so if you have one - contact me: <span class="link">prokopowiczdaniel@gmail.com</span>
+        </p>
+      </header>
+      <div class="game"></div>
+    </div>
+    <main class="main">
+      <section class="skills"id="my skills">
+        <h1 class="header__first">My skills</h1>
+        <p class="header__first--underline">_______</p>
+        <section class="skills__content skills__green">
+            <h1 class="header__first">Working knowledge</h1>
+            <ul class="list list__green">
+              <li class="list__element">Semantic HTML5</li>
+              <li class="list__element">Flexbox</li>
+              <li class="list__element">Js:DOM manipulations</li>
+              <li class="list__element">JS:Local storage</li>
+              <li class="list__element">Figma</li>
+              <li class="list__element">CSS grid</li>
+              <li class="list__element">Forms</li>
+              <li class="list__element">Markdown</li>
+              <li class="list__element">SASS</li>
+            </ul>
+        </section>
+        <p class="header__first--underline">_______</p>
+        <section class="skills__content">
+            <h1 class="header__first">Know somethign about</h1>
+            <ul class="list list__purple">
+              <li class="list__element">JavaScript ES6+features</li>
+              <li class="list__element">CSS animations</li>
+              <li class="list__element">Working with API</li>
+              <li class="list__element">NPM Scripts</li>
+              <li class="list__element">Progresive web apps</li>
+              <li class="list__element">Git</li>
+              <li class="list__element">Accessibility</li>
+            </ul>
+        </section>
+        <p class="header__first--underline">_______</p>
+        <section class="skills__content">
+            <h1 class="header__first">Want to learn</h1>
+            <ul class="list list__blue">
+              <li class="list__element">React JS</li>
+              <li class="list__element">Node JS</li>
+              <li class="list__element">Electron</li>
+              <li class="list__element">Server side rendering</li>
+              <li class="list__element">Typescript</li>
+              <li class="list__element">Gatsby</li>
+              <li class="list__element">Websockets</li>
+            </ul>
+        </section>
+      </section>
+      <section class="projects"id="my projects">
+          <h1 class="header__first">Recent projecsts</h1>
+          <ul class="list__repo list--js"></ul>
+      </section>
+
+    </main>
+    <footer>
+      <section class="contact"></section>
+    </footer>
+    <footer class="footer">
+        <section>
+          <h1 class="footer__header">Contact me</h1>
+          <p class="paragrath__footer">I'm open for new opportunities. if you have one for me we should talk! <span class="link">
+              prokopowiczdaniel@gmail.com
+          </span></p>
+        </section>
+      </footer>
+      <script src="js/main.js"></script>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

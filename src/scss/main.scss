@@ -11,6 +11,115 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  display: flex;
+  justify-content: center;
+  font-family: Lato, sans-serif;
+  background: rgb(136, 134, 134);
+}
+.container{
+  max-width: 1440px;
+  padding: 5rem;
+  background: white;
+}
+.footer{
+  background: #171f3f;
+  padding: 20px;
+  &__header{
+    color: whitesmoke;
+    margin-top: 0;
+  }
+}
+.header{
+  width: 50%;
+  &--picture{
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}
+.header__first{
+  margin: 0;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  &--top{
+    letter-spacing: 1px;
+  }
+ &--underline{
+   color: #06C847;
+   font-size: 2rem;
+   padding-left: 20px;
+   margin:0;
+   margin-top:40px;
+   background: whitesmoke;
+   letter-spacing: -2px;
+   &:nth-of-type(2)
+   {
+     color: #653CAD;
+   }
+   &:nth-of-type(3)
+   {
+     color: #2251CC;
+   }
+ }
+}
+.link{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(92, 92, 233);
+  transition: color .4s ease-in-out;
+  &:hover{
+    color: rgb(126, 20, 43);
+  }
+}
+.list{
+  width: 55%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  max-height: 160px;
+  font-size: 1.2rem;
+ 
+    &__green{
+    list-style-image: url('/assets/img/check-circle-solid--green.svg');
+    padding-right: 150px;
+  }
+  &__purple{
+    list-style-image: url('/assets/img/check-circle-solid--purple.svg');
+    padding-right: 130px;
+  }
+  &__blue{
+    list-style-image: url('/assets/img/check-circle-solid--blue.svg');
+    padding-right: 140px;
+  }
+  &__element{
+    line-height: 2rem;
+    letter-spacing: 2px;
+  }
+  &__repo{
+    display: flex;
+    justify-content: space-around;
+    list-style-image: url('/assets/img/AK.svg');
+    flex-wrap: wrap;
+    &--element{
+      width: 22%;
+      background: whitesmoke;
+      padding: 10px;
+      margin: 20px 40px 20px 40px;
+    }
+  }
+}
+.paragrath{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  &__footer{
+    color:whitesmoke;
+  }
+}
+.skills{
+  margin-top: 150px;
+ &__content{  
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: whitesmoke;
+ }
 }
