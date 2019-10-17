@@ -65,6 +65,12 @@
       "css": "ok-circle",
       "code": 59394,
       "src": "iconic"
+    },
+    {
+      "uid": "8669af50382b53c48b9b803692828dd0",
+      "css": "github-circled-alt2",
+      "code": 61526,
+      "src": "mfglabs"
     }
   ]
 }

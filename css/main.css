@@ -329,6 +329,15 @@ body {
   max-width: 1440px;
   padding: 5rem;
   background: white; }
+  @media (min-width: 641px) {
+    .container__smaller {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media (min-width: 641px) {
+  .game {
+    width: 50%; } }
 
 .footer {
   background: #171f3f;
@@ -344,6 +353,7 @@ body {
     margin-bottom: 20px; }
 
 .header__first {
+  width: 45%;
   margin: 0;
   letter-spacing: 1px;
   padding-left: 20px; }
@@ -373,18 +383,26 @@ body {
     color: #7e142b; }
 
 .list {
-  width: 55%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  max-height: 160px;
   font-size: 1.2rem; }
+  @media (max-width: 1300px) {
+    .list {
+      padding-left: 100px;
+      padding-right: 0; } }
+  @media (min-width: 1300px) {
+    .list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      max-height: 160px; } }
   .list__green {
     list-style-image: url("/assets/img/check-circle-solid--green.svg");
     padding-right: 150px; }
@@ -405,12 +423,25 @@ body {
         justify-content: space-around;
     list-style-image: url("/assets/img/AK.svg");
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    background: whitesmoke; }
+    @media (max-width: 960px) {
+      .list__repo {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     .list__repo--element {
-      width: 22%;
+      width: 26%;
       background: whitesmoke;
       padding: 10px;
       margin: 20px 40px 20px 40px; }
+      @media (max-width: 960px) {
+        .list__repo--element {
+          width: 60%; } }
 
 .paragrath {
   font-size: 1.2rem;
@@ -431,5 +462,11 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     background: whitesmoke; }
+    @media (max-width: 640px) {
+      .skills__content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap; } }
 
 /*# sourceMappingURL=main.css.map */
