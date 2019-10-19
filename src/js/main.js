@@ -13,17 +13,18 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-
+const list = document.querySelector('.list--js');
 if('.list--js') {
-  const list = document.querySelector('.list--js');
     fetch('https://api.github.com/users/doneilprakapawecz/repos').
     then(resp => resp.json())
     .then(resp => {
       const repos = resp;
+      list.innerHTML="";
       for (const repo of repos) {
         const {description,html_url, name} = repo;
-        list.innerHTML += `<li class="list__repo--element">
-             <a href="${html_url}"class="link"target="_blank"> ${name} </a>
+        list.innerHTML+= `<li class="list__repo--element">
+             <a href="${html_url}"class="link"target="_blank">
+             <i class="icon-github-circled-alt2"></i><br>  ${name} </a>
              <p class="paragrath">${description ? description: "brak opisu" }</p>
          </li>`;
       }

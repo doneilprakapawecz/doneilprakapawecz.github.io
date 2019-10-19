@@ -20,6 +20,16 @@ body {
   max-width: 1440px;
   padding: 5rem;
   background: white;
+  &__smaller{
+    @media(min-width:641px){
+      display: flex;
+    }
+  }
+}
+.game{
+  @media(min-width:641px){
+    width: 50%;
+  }
 }
 .footer{
   background: #171f3f;
@@ -37,6 +47,7 @@ body {
   }
 }
 .header__first{
+  width: 45%;
   margin: 0;
   letter-spacing: 1px;
   padding-left: 20px;
@@ -71,16 +82,23 @@ body {
   }
 }
 .list{
-  width: 55%;
+  width: 85%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column ;
   align-content: space-between;
-  max-height: 160px;
   font-size: 1.2rem;
+  @media(max-width:1300px){
+    padding-left: 100px;
+    padding-right: 0;
+  }
+  @media(min-width: 1300px){
+    flex-wrap: wrap;
+    max-height:160px;
+  }
  
     &__green{
     list-style-image: url('/assets/img/check-circle-solid--green.svg');
-    padding-right: 150px;
+      padding-right: 150px;
   }
   &__purple{
     list-style-image: url('/assets/img/check-circle-solid--purple.svg');
@@ -93,17 +111,27 @@ body {
   &__element{
     line-height: 2rem;
     letter-spacing: 2px;
+
   }
   &__repo{
     display: flex;
     justify-content: space-around;
     list-style-image: url('/assets/img/AK.svg');
     flex-wrap: wrap;
+    background: whitesmoke;
+    @media(max-width: 960px) {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
     &--element{
-      width: 22%;
+      width: 26%;
       background: whitesmoke;
       padding: 10px;
       margin: 20px 40px 20px 40px;
+      @media(max-width: 960px){
+        width: 60%;
+      }
+
     }
   }
 }
@@ -121,5 +149,10 @@ body {
   justify-content: space-between;
   align-items: baseline;
   background: whitesmoke;
+  @media(max-width: 640px){
+    flex-flow: column nowrap;
+  }
+    
  }
 }
+/*-----------------------------K__version------------------------------------------*/
