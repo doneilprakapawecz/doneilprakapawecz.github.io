@@ -1,9 +1,19 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
+@import "modules/hero.scss";
+@import "modules/skills.scss";
+@import "modules/project.scss";
+@import "modules/contact.scss";
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  @media(max-width: $mobile){
+    font-size: 11px;
+  }
 }
 
 *, *:before, *:after {
@@ -11,10 +21,26 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  font-family: Lato, sans-serif;
-  background: rgb(136, 134, 134);
+  /*justify-content: center;*/
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  /*background: rgb(136, 134, 134);*/
+  background: #fff;
+  color: $big-stone;
+  border: 16px solid $big-stone;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media(max-width: $mobile){
+    border: none;
+  }
+}
+.k__container{
+  max-width: 1216px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+/*main{
+  padding-left: 112px;
 }
 .container{
   max-width: 1440px;
@@ -154,5 +180,4 @@ body {
   }
     
  }
-}
-/*-----------------------------K__version------------------------------------------*/
+}*/
